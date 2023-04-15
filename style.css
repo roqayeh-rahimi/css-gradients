@@ -44,13 +44,28 @@ body{
     margin: 0 0 0 0.1em;
     font-style: italic;
     
-    background: var(--gradient);
+    background-image: var(--gradient);
     -webkit-background-clip: text;
-    /* background-clip: text;   ?? it is not working */ 
-    color: transparent;
-
+    /* background-clip: text;   ?? it is not working for me*/ 
+    color: transparent; 
+    background-size: 400%;
+    animation:animation-gradients 3s infinite alternate ;
     /* font-size: 72px; */
     /* background: -webkit-linear-gradient(#eee, #333); */
     /* -webkit-text-fill-color: transparent; */
-    
+
+
 }
+
+@keyframes animation-gradients {
+    0%{
+        background-position: left ;
+    }
+    100%{
+        background-position: right ;
+    }
+}
+.btn:hover{
+
+}
+
