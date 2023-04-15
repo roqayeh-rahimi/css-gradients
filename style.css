@@ -65,7 +65,20 @@ body{
         background-position: right ;
     }
 }
+
+.btn{
+    /* display: block; */
+    margin-top: 30px;
+    padding: 10px 20px;
+    font-size: 20px;
+    border: none;
+    background-image: var(--gradient);
+    background-size: 200%;
+    transition: background-position 1s ;
+}
+
 .btn:hover{
+    background-position: right;
 
 }
 
